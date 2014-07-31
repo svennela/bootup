@@ -1,0 +1,11 @@
+---
+applications:
+- name: bootup
+  memory: 512M
+  instances: 1
+  host: bootup-svennela
+  domain: 10.10.27.100.xip.io
+  buildpack: https://github.com/svennela/java-buildpack.git
+  path: target/bootup-1.0.war
+  services:
+  - mysql  
